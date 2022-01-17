@@ -13,7 +13,7 @@ import com.fm.mybank.person.Client;
 public class Application {
 
 	// Create bank, controller and start menu
-	private Bank bank = new Bank("Banken", "Sundsvall");
+	private Bank bank = Bank.getInstance();
 	private BankView bankView = new BankView();
 	private BankController bankController = new BankController(bank, bankView);
 	private StartMenu menu = new StartMenu();

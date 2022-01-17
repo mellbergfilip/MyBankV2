@@ -1,7 +1,7 @@
-# MyBank
+# MyBankV2
 
 ## Description
-A console application that simulates a bank with very simple functions. 
+Version 2 of my previous project "Mybank". A console application that simulates a bank with very simple functions. 
 Potential story could be an employee using this application for registration and transaction purposes.
 
 #### Functions
@@ -12,7 +12,7 @@ Potential story could be an employee using this application for registration and
 * Withdraw money from accounts
 
 ### Purpose & Motivation
-A sideproject to learn more about object-oriented programming, design patterns and Java meanwhile studying OOP-course.
+Sideproject meanwhile studying a system architecture- and design pattern-course. This is to learn more, mostly about common design patterns, but of course also to sharpen my overall skills in programming & Java. 
 
 ### Used techniques
 - Java

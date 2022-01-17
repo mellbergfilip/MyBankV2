@@ -19,3 +19,4 @@ Sideproject meanwhile studying a system architecture- and design pattern-course.
 - Git
 - Object-oriented programming
 - MVC design pattern
+- Singleton design pattern

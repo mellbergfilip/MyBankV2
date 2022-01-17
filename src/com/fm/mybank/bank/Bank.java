@@ -9,12 +9,15 @@ import com.fm.mybank.person.Client;
  * Model class that represent bank
  * Holds a list with all clients
  * Method that add clients to list
+ * Singleton design pattern -
+ * Only one object can be created
  * Right now there is very little data in this class
  * This was just to learn more about object-oriented
  * programming and Java
  */
 public class Bank {
 
+	private static Bank theOnlyBank;
 	private String name, city;
 	private List<Client> clientList;
 
@@ -25,6 +28,17 @@ public class Bank {
 		clientList = new ArrayList<Client>();
 	}
 
+	/*
+	 * Singleton design pattern
+	 * Only one object can be created
+	 */
+	public static Bank getInstance() {
+		if(theOnlyBank == null) {
+			theOnlyBank = new Bank("Banken", "Sundsvall");
+		}
+		return theOnlyBank;
+	}
+	
 	public String getName() {
 		return name;
 	}

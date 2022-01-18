@@ -1,7 +1,7 @@
 package com.fm.mybank.menu;
 
 import com.fm.mybank.bank.BankController;
-import com.fm.mybank.bank.BankServicesFacade;
+import com.fm.mybank.service.BankServicesFacade;
 import com.fm.mybank.util.ConsolePrinter;
 import com.fm.mybank.util.InputSafetyChecker;
 

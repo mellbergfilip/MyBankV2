@@ -1,8 +1,6 @@
-package com.fm.mybank.bank;
+package com.fm.mybank.service;
 
-import com.fm.mybank.service.AccountRegistrationService;
-import com.fm.mybank.service.ClientRegistrationService;
-import com.fm.mybank.service.MoneyTransferService;
+import com.fm.mybank.bank.BankController;
 
 /*
  * Facade class to reach and hide logic

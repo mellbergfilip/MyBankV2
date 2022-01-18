@@ -2,12 +2,12 @@ package com.fm.mybank.application;
 
 import com.fm.mybank.bank.Bank;
 import com.fm.mybank.bank.BankController;
-import com.fm.mybank.bank.BankServicesFacade;
 import com.fm.mybank.bank.BankView;
 import com.fm.mybank.menu.MoneyTransferMenu;
 import com.fm.mybank.menu.RegistrationMenu;
 import com.fm.mybank.menu.StartMenu;
 import com.fm.mybank.person.Client;
+import com.fm.mybank.service.BankServicesFacade;
 
 /*
  * Class that represents the whole application,

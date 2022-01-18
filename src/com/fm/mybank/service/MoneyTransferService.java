@@ -10,7 +10,7 @@ import com.fm.mybank.util.InputSafetyChecker;
 /*
  * Class with methods for logic & input related to money transfer
  */
-public class MoneyTransfer {
+public class MoneyTransferService {
 
 	// Common shared variables for all methods in class
 	private BankAccount chosenAccount;
@@ -18,7 +18,7 @@ public class MoneyTransfer {
 	private double sum;
 
 	// Method that takes input from user & deposit chosen sum to chosen account
-	public void depositToChosenAccount(BankController bankController) {
+	public void deposit(BankController bankController) {
 
 		bankController.PrintClientInfoList();
 		System.out.println("-------- DEPOSIT -----------");
@@ -39,7 +39,7 @@ public class MoneyTransfer {
 	}
 
 	// Method that takes input from user & withdraw chosen sum from chosen account
-	public void withdrawFromChosenAccount(BankController bankController) {
+	public void withdraw(BankController bankController) {
 
 		bankController.PrintClientInfoList();
 		;

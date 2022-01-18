@@ -20,3 +20,4 @@ Sideproject meanwhile studying a system architecture- and design pattern-course.
 - Object-oriented programming
 - MVC design pattern
 - Singleton design pattern
+- Facade design pattern

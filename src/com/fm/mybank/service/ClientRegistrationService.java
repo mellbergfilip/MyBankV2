@@ -9,10 +9,10 @@ import com.fm.mybank.util.InputScanner;
 /*
  * Class with methods for logic & input related to client registration
  */
-public class ClientRegistration {
+public class ClientRegistrationService {
 
 	// Method that takes input from user & add new client to bank
-	public void regCustomer(BankController bankController) {
+	public void regClient(BankController bankController) {
 
 		String firstName, lastName;
 		Client newClient;

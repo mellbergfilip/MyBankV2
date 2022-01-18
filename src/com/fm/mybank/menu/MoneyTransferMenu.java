@@ -1,7 +1,7 @@
 package com.fm.mybank.menu;
 
 import com.fm.mybank.bank.BankController;
-import com.fm.mybank.service.MoneyTransfer;
+import com.fm.mybank.bank.BankServicesFacade;
 import com.fm.mybank.util.ConsolePrinter;
 import com.fm.mybank.util.InputSafetyChecker;
 
@@ -11,13 +11,11 @@ import com.fm.mybank.util.InputSafetyChecker;
  */
 public class MoneyTransferMenu {
 
-	// Create service MoneyTransfer
-	private MoneyTransfer moneyTransfer = new MoneyTransfer();
 
 	/* Logic for MoneyTransfer menu
 	 * Switch/Case Menu
 	 */
-	public void runMoneyTransferMenu(BankController bankController) {
+	public void runMoneyTransferMenu(BankController bankController, BankServicesFacade bankServicesFacade) {
 
 		int menuChoice = 0;
 
@@ -27,10 +25,10 @@ public class MoneyTransferMenu {
 			ConsolePrinter.dottedLine();
 			switch (menuChoice) {
 			case 1:
-				moneyTransfer.depositToChosenAccount(bankController);
+				bankServicesFacade.depositMoney(bankController);
 				break;
 			case 2:
-				moneyTransfer.withdrawFromChosenAccount(bankController);
+				bankServicesFacade.withdrawMoney(bankController);
 				break;
 			case 3:
 				break;

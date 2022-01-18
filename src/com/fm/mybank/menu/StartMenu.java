@@ -1,6 +1,7 @@
 package com.fm.mybank.menu;
 
 import com.fm.mybank.bank.BankController;
+import com.fm.mybank.bank.BankServicesFacade;
 import com.fm.mybank.util.ConsolePrinter;
 import com.fm.mybank.util.InputSafetyChecker;
 
@@ -10,14 +11,10 @@ import com.fm.mybank.util.InputSafetyChecker;
  */
 public class StartMenu {
 
-	// Create MoneyTransferMenu & RegistrationMenu
-	private MoneyTransferMenu transferMenu = new MoneyTransferMenu();
-	private RegistrationMenu regMenu = new RegistrationMenu();
-
 	/* Logic for start menu
 	 * Switch/Case Menu
 	 */
-	public void runStartMenu(BankController bankController) {
+	public void runStartMenu(BankController bankController, BankServicesFacade bankServicesFacade, MoneyTransferMenu transferMenu, RegistrationMenu regMenu) {
 		int menuChoice = 0;
 
 		while (menuChoice != 4) {
@@ -30,10 +27,10 @@ public class StartMenu {
 				bankController.PrintClientInfoList();
 				break;
 			case 2:
-				regMenu.runRegMenu(bankController);
+				regMenu.runRegMenu(bankController, bankServicesFacade);
 				break;
 			case 3:
-				transferMenu.runMoneyTransferMenu(bankController);
+				transferMenu.runMoneyTransferMenu(bankController, bankServicesFacade);
 				break;
 			case 4:
 				ConsolePrinter.shuttingDown();

@@ -1,8 +1,7 @@
 package com.fm.mybank.menu;
 
 import com.fm.mybank.bank.BankController;
-import com.fm.mybank.service.AccountRegistration;
-import com.fm.mybank.service.ClientRegistration;
+import com.fm.mybank.bank.BankServicesFacade;
 import com.fm.mybank.util.ConsolePrinter;
 import com.fm.mybank.util.InputSafetyChecker;
 
@@ -12,14 +11,11 @@ import com.fm.mybank.util.InputSafetyChecker;
  */
 public class RegistrationMenu {
 
-	// Create services ClientRegistration & AccountRegistration
-	private ClientRegistration clientReg = new ClientRegistration();
-	private AccountRegistration accountReg = new AccountRegistration();
 
 	/* Logic for Registration menu
 	 * Switch/Case Menu
 	 */
-	public void runRegMenu(BankController bankController) {
+	public void runRegMenu(BankController bankController, BankServicesFacade bankServicesFacade) {
 
 		int menuChoice = 0;
 		while (menuChoice != 3) {
@@ -29,10 +25,10 @@ public class RegistrationMenu {
 			ConsolePrinter.dottedLine();
 			switch (menuChoice) {
 			case 1:
-				clientReg.regCustomer(bankController);
+				bankServicesFacade.regClient(bankController);
 				break;
 			case 2:
-				accountReg.regAccount(bankController);
+				bankServicesFacade.regAccount(bankController);
 				break;
 			case 3:
 				break;

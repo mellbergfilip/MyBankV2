@@ -8,7 +8,7 @@ import com.fm.mybank.util.InputSafetyChecker;
 /*
  * Class with methods for logic & input related to account registration
  */
-public class AccountRegistration {
+public class AccountRegistrationService {
 
 	// Method that takes input from user & add new account to client
 	public void regAccount(BankController bankController) {
